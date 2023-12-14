@@ -1,5 +1,5 @@
 import productos from "../products.js";
-import {addEventListenersToProductCards, closeExpandedView, addToCart } from "expanded-Product-Card.js";
+import {addEventListenersToProductCards, closeExpandedView, addToCart } from ".expanded-product-card.js";
 
 
 
