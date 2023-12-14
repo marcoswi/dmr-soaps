@@ -20,7 +20,7 @@ function showProducts (productos) {
             productCard.id = product.id;
             /* Create img in product card */
             const productImage = document.createElement('img');
-            productImage.src = "."+product.img;
+            productImage.src = product.img;
             productImage.alt = product.name;
             productImage.id = product.id;
             /* Create name in product card */
@@ -44,7 +44,7 @@ function showProducts (productos) {
             expandedProductCard.classList.add("expanded-product-card");
             /* Create expanded view IMG */
             const expandedProductImg = document.createElement("img");
-            expandedProductImg.src = "."+product.img;
+            expandedProductImg.src = product.img;
             expandedProductImg.alt = product.name;
             /* Create expanded view Product Info */
             const expandedProductInfo = document.createElement("div");
@@ -152,8 +152,3 @@ function filterProductos (checkboxStatus) {
         showProducts(filteredProducts);
     }
 
-
-
-
-
-    
