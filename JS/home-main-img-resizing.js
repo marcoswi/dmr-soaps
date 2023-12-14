@@ -6,9 +6,9 @@ window.addEventListener('DOMContentLoaded', function () {
     // Check the width of the screen and change the image source accordingly
     function updateImageSource() {
       if (window.matchMedia('(max-width: 1300px)').matches) {
-        myImage.src = '/assets/images/main-photo-mobile.jpg';
+        myImage.src = 'assets/images/main-photo-mobile.jpg';
       } else {
-        myImage.src = '/assets/images/main-photo-desktop.png';
+        myImage.src = 'assets/images/main-photo-desktop.png';
       }
     }
 
