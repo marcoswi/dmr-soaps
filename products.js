@@ -228,7 +228,7 @@
             id: 29,
             name: "Jabón para pies de arcilla volcánica",
             description: "Revitaliza tus pies con nuestro jabón de arcilla volcánica. Disfruta de un cuidado refrescante y restaurador para tus pies.",
-            img: "assets/images/soaps/jabon_pies_arcilla_volcanica.jpeg",
+            img: 'assets/images/soaps/jabon_pies_arcilla_volcanica.jpeg',
             product_type: "jabones",
             price: 10
         }
