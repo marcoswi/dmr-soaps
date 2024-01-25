@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMRSoaps</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!------- HEADER -------->
+    <header>
+        <nav>
+            <div id="hamburger-icon-menu">&#9776;</div>
+            <ul id="navbar-menu">  
+                <li id="close-navbar-menu" class="menu-option">&times;</li>                  
+                <li class="menu-option"><a class="menu-option-a" href="">INICIO</a></li>
+                <li class="menu-option"><a class="menu-option-a" href="productos.html">PRODUCTOS</a></li>
+                <li class="menu-option"><a class="menu-option-a" href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                <li class="menu-option"><a class="menu-option-a" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div id="logo-section">
+            <a href="#"><img id="logo" src="/assets/various-page-assets/dmr_logo.png" alt="dmr soaps logo"></a>
+        </div>
+        <div id="shoppingCart-section">
+            <img id="shopping-cart-icon" src="/assets/various-page-assets/bolso-shopping-cuadrado-con-asa.png" alt="shopping cart icon">
+        </div>
+    </header>
+    <!------- MAIN -------->
+    <main>
+        <div id="image-section"></div>
+        <div id="main-section">
+            <h2 id="main-section-title">Jabones naturales, pieles saludables.</h2>
+            <p id="main-section-p">Cada jabón cuenta con propiedades particulares que le brindarán a tu piel lo que necesita.</p>
+            <a  id="main-section-btn-a" href="productos.html"><div id="main-section-btn" class="main-section-btn-class">ENCUENTRA EL TUYO</div></a>
+        </div>
+        <div id="benefits-section-main">
+            <div class="benefit">               
+                <img class="benefit-icon" src="/assets/various-page-assets/icon-natural-ingredients.png" alt="Icono Ingredientes Naturales" srcset="">
+                <div class="benefit-title">Ingredientes 100% naturales</div>
+            </div>
+            <div class="benefit">                
+                <img class="benefit-icon" src="/assets/various-page-assets/icon-environment-friendly.png" alt="Icono amigable con el medio ambiente" srcset="">
+                <div class="benefit-title">Respetuosos con el medio ambiente</div>
+            </div>
+            <div class="benefit">
+                <img class="benefit-icon" src="/assets/various-page-assets/icon-soft-skin.png" alt="Icono suaviza la piel y no irrita" srcset="">
+                <div class="benefit-title">Suavizan la piel y no irritan</div>
+            </div>
+        </div>
+        <div id="gift-section">
+            <div id="gift-section-text" class="gift-section-text-class">“El regalo perfecto, para cuidar tu piel.”</div>
+        </div>
+    </main>
+    <!------- FOOTER ------->
+    <footer>
+        <div id="newsletter-container">
+            <h4>SUSCRIBETE A NUESTRO NEWSLETTER</h4>
+            <form action="" class="newsletter-form">
+                <label for="email-for-newsletter">EMAIL:</label>
+                <input id="email-for-newsletter" class="newsletter-form-input" type="email" placeholder="Tu email" autocomplete="off">
+                <div id="expandable-inputs">
+                    <label for="first-name-for-newsletter" class="notVisible">Nombre:</label>
+                    <input  id="first-name-for-newsletter" type="text" class="newsletter-form-input notVisible" placeholder="Tu nombre" autocomplete="off">
+                    <label for="last-name-for-newsletter" class="notVisible">Apellido:</label>
+                    <input  id="last-name-for-newsletter" type="text" class="newsletter-form-input notVisible" placeholder="Tu apellido" autocomplete="off">
+                    <button type="submit" class="submit-btn-newsletter notVisible">Enviar</button>
+                </div>
+            </form>
+            <p>Recibe noticias sobre nuevos productos, consejos de higiene y belleza natural, y promociones.</p>
+        </div>
+        <div id="footer-contact-container">
+            <h4>Ponte en contacto</h4>
+            <ul class="social-media-container home-social-media-ul">
+                <li><a href="https://www.instagram.com/dmr.soaps/" target="_blank"><img class="social-media-icon" src="assets/various-page-assets/social-media/instagram.png" alt="instagram logo"></a></li>
+                <li><a href="https://www.facebook.com/raikesdaniela/" target="_blank"><img class="social-media-icon"src="assets/various-page-assets/social-media/facebook.png" alt="facebook logo"></a></li>
+            </ul>
+        </div>
+        <div class="legal-footer">
+            <p> ©2024 DMRSoaps.</p>
+            <p>Diseñado por MW</p>
+        </div>
+    </footer>
+    
+    <script src="/JS/general.js"></script>
+    <script src="/JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+
+
+#main-display-container{
+    background-color: var(--white);
+    position: relative;
+}
+
+#filters-container{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category-filter{
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s ease;
+}
+
+.category-filter.active{
+    border-bottom: 2px solid var(--dark);
+}
+
+#products-display-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding: 30px;
+
+    @media (min-width:770px){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    @media (min-width:1025px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+};
+
+.productCard {
+    height: 200px;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+    cursor: pointer;
+}
+
+.productImg{
+    width: 100%;
+}
+
+.productTitle{
+    padding: 10px 0;
+    height: 50px;
+}
+
+.product-benefits{
+    text-align: center;
+    background-color: var(--pink);
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    margin: 3px 0 ;
+    letter-spacing: 0.1em;
+}
+
+
+.addToCartBtn{
+    background-color: var(--dark);
+    font-family: var(--typo-courier);
+    font-size: 10px;
+    width: 100%;
+    margin-top: auto;
+    height: 40px;
+    border: none;
+    color: var(--white);
+    letter-spacing: 0.1em;
+}
+
+.productPrice{
+    background-color: var(--dark);
+}
+
+/* EXPANDED PRODUCT CARD VIEW */
+.expandedView-ProductCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+}
+
+.closeExpandedViewBtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.expandedView-ProductImgContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.expandedView-ProductImg{
+    width: 50%;
+    height: auto;
+}
+
+.expandedView-addToCartContainer{
+    display: flex;
+    margin: 10px 0;
+}
+
+.expandedView-CounterContainer{
+    display: flex;
+    width: 30%;
+    height: 40px;
+    border: 1px solid var(--dark);
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--typo-courier);
+    font-size: 15px;
+}
+
+.counterAddSubstractBtn{
+    width: 30px;
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.expandedView-AddToCartBtn{
+    background-color: var(--dark);
+    font-family: var(--typo-courier);
+    font-size: 10px;
+    width: 70%;
+    margin-top: auto;
+    height: 40px;
+    border: none;
+    color: var(--white);
+    letter-spacing: 0.1em;
+}
+
+.expandedView-productName{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.expandedView-productFormatsTitle{
+    font: 15px;
+}
+
+.priceFormatTitle{
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+
+.formatPriceOption{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 10px;
+
+}
+
+.formatPriceOption label{
+    padding-top: 2px;
+    margin-left: 5px;
+    text-align: center;
+}

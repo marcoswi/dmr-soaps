@@ -1,0 +1,118 @@
+/* ---- Index Main ---------------------------- */
+
+#image-section{
+    background-color: var(--white);
+    height: 400px;
+    background-image: url(../assets/various-page-assets/mainPage-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main-section{
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 ;
+}
+
+
+#main-section-title{
+    width: 60%;
+    margin: 10px;
+
+}
+
+#main-section-p{
+    width: 80%;
+    margin: 10px;
+
+}
+
+#main-section-btn-a{
+    width: 40%;
+}
+
+.main-section-btn-class{
+    height: auto;
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+    color: var(--white);
+    background-color: var(--dark);
+    border: none;
+    font-family: var(--typo-courier);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#benefits-section-main{
+    height: 200px;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 15px;
+}
+
+.benefit{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.benefit-icon{
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.benefit-title{
+    text-align: center;
+}
+
+#gift-section{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/various-page-assets/regalos_jabones.jpeg);
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+    color: var(--white);
+    position: relative;
+}
+
+#gift-section::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Dark color (adjust as needed) */
+    opacity: 0.4; /* Adjust the opacity to control the darkness */
+}
+
+.gift-section-text-class{
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    color: var(--white);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.appear{
+    opacity: 1;
+}
+
