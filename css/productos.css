@@ -56,6 +56,11 @@
 .productTitle{
     padding: 10px 0;
     height: 50px;
+    font-size: 12px;
+
+    @media (min-width:400px){
+        font-size: 15px;
+    }
 }
 
 .product-benefits{
@@ -154,6 +159,7 @@
     border: none;
     color: var(--white);
     letter-spacing: 0.1em;
+    cursor: pointer;
 }
 
 .expandedView-productName{

@@ -307,13 +307,13 @@ const precios = {
     accesorios : [
         {
             id:1,
-            formato:"Sin barra de jabón",
-            precio: 3500
+            formato:"Con barra de jabón",
+            precio: 5500
         }, 
         {
             id:2,
-            formato:"Con barra de jabón",
-            precio: 5500
+            formato:"Sin barra de jabón",
+            precio: 3500
         }
     ]
 };

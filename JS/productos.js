@@ -91,21 +91,25 @@ class DisplayProducts {
 
         pricesDiv.appendChild(pricesFormatsTitle);
 
+        let isFirstIteration = true;
         selectedProductPrices.forEach((id)=>{
             const formatAndPrice = pricesArray.find(price => price.id == id)
             const formatAndPriceDiv = document.createElement("div");
             formatAndPriceDiv.classList.add("formatPriceOption");
-            if (selectedProductPrices.length > 1){
+
+            if (isFirstIteration){
                 formatAndPriceDiv.innerHTML = `
-                <input type="radio" id="format${id}" name="formatOptions" value="${formatAndPrice.precio}">
+                <input type="radio" id="format${id}" name="formatOptions" value="${id}" checked>
                 <label for="format${id}">${formatAndPrice.formato} - AR$${formatAndPrice.precio}</label>
                 `;
+                isFirstIteration = false;
             } else {
                 formatAndPriceDiv.innerHTML = `
-                <input type="radio" id="format${id}" name="formatOptions" value="${formatAndPrice.precio}" checked>
-                <label for="format${id}">${formatAndPrice.formato} - AR$${formatAndPrice.precio}</label>
+                <input type="radio" id="format" name="formatOptions" value="${id}">
+                <label for="format">${formatAndPrice.formato} - AR$${formatAndPrice.precio}</label>
                 `;
-            };
+            }
+
             
             pricesDiv.appendChild(formatAndPriceDiv);
         })
@@ -115,10 +119,10 @@ class DisplayProducts {
                     <div class="expandedView-addToCartContainer">
                         <div class="expandedView-CounterContainer">
                             <button class="counterAddSubstractBtn" id="substract">-</button>
-                            <div class="counter">${count} </div>
+                            <div class="counter" id="counterNumber">${count} </div>
                             <button class="counterAddSubstractBtn" id="add">+</button>
                         </div>
-                        <button class="expandedView-AddToCartBtn">AGREGAR AL CARRITO</button>
+                        <button class="expandedView-AddToCartBtn" value="${product.id}" >AGREGAR AL CARRITO</button>
                     </div>
         `;
         pricesDiv.appendChild(addToCart);
@@ -167,6 +171,13 @@ class DisplayProducts {
             
             mainDisplayContainer.appendChild(expandedProductView);
 
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+            });
+
+            this.addSubstractCount();     
+
         }
     };
 
@@ -178,6 +189,26 @@ class DisplayProducts {
         filtersContainer.style.display = "flex";
         productDisplay.style.display = "grid";
     }
+
+    //To add or substract the quantity in the counter of the Expanded View.
+    addSubstractCount (){
+        const addSubstractBtns = document.getElementsByClassName("counterAddSubstractBtn");
+            [...addSubstractBtns].forEach(btn =>{
+                btn.addEventListener("click", function (event){
+                    let btnId = event.target.id;
+                    if (btnId == "add" && count <= 19){ //Im setting a top of 20 products
+                        count = count +1;
+                    } else if (btnId == "substract" && count >= 1){
+                        count = count -1;
+                    } 
+                    const counterNumber = document.getElementById("counterNumber");
+                    counterNumber.innerText = `${count}`;
+                    return count;
+                })
+            });
+    };
+
+
 };
 
 const displayProductsClass = new DisplayProducts();
@@ -187,7 +218,6 @@ displayProductsClass.assignActiveStatusToFilterOptions(categoryButtons);
 
 // To display expanded product view:
 productDisplay.addEventListener("click", displayProductsClass.generateExpandedProductCard);
-
 
 
 

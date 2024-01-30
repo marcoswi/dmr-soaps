@@ -6,13 +6,15 @@
     box-sizing: border-box;
 }
 
+
+
 :root {
     --white: #ffffff;
-    --light: #FAF3F0;
-    --pink: #FFCACC;
+    --light: #DDD4C0;
+    --pink: #f1e8d6;
     --lavander: #DBC4F0;
     --green: #D4E2D4;
-    --dark: #512D38;
+    --dark: #513b2d;
     --typo-courier: 'Courier Prime', monospace;
     --regular-weight: 400;
     --italic-weight: 400;
@@ -109,7 +111,7 @@ nav{
 }
 
 #logo{
-    height: 60px;
+    height: 90px;
 }
 
 
@@ -124,6 +126,28 @@ nav{
     height: 30px;
     margin-right: 20px;
 }
+
+/* ---- ShoppingCart ---------------------------- */
+
+#shoppingCart{
+    opacity: 0;
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    top:150px;
+    right: -100%;
+    background-color: var(--white);
+    box-shadow: 1px 100px 100px var(--dark);
+    transition: opacity 1000ms ease, right 1000ms ease; 
+    z-index: 1;
+}
+
+#shoppingCart.active {
+    right: 0;
+    opacity: 1;
+}
+
+
 
 
 /* ---- Footer ---------------------------- */

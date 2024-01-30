@@ -1,4 +1,3 @@
-
 //To OPEN and CLOSE menu:
 const openMenuBtn = document.getElementById("hamburger-icon-menu");
 const closeMenuBtn = document.getElementById("close-navbar-menu");
@@ -25,9 +24,7 @@ emailSuscription.addEventListener("click", function(){
 });
 
 //To mark the selected option in the menu as active:
-
 document.addEventListener("DOMContentLoaded", function(){
-
     const currentHref = window.location.href;
     const menuOptions = document.querySelectorAll(".menu-option-a");
 
@@ -36,13 +33,13 @@ document.addEventListener("DOMContentLoaded", function(){
             option.classList.add("menu-option-a-active");
         }
     });
-
 });
 
 
 //Make the menu appear as sticky without changing its position:absolute
 const navbarMenu = document.getElementById("navbar-menu");
 function handleMenuScroll() {
+    console.log("asdkakljs");
     const scrollPosition = window.scrollY;
     const threshold = 0;
     if (scrollPosition > threshold) {
@@ -50,5 +47,22 @@ function handleMenuScroll() {
     } else {
         navbarMenu.style.top = "0";
     }
-}
+};
 window.addEventListener("scroll", handleMenuScroll);
+
+
+//To open and close Shopping Cart:
+const shoppingCartIcon = document.getElementById("shopping-cart-icon");
+const shoppingCart = document.getElementById("shoppingCart");
+
+let isCartShowing = false;
+shoppingCartIcon.addEventListener("click", () =>{
+    console.log("clicked");
+    if (!isCartShowing){
+        shoppingCart.classList.add("active");
+        isCartShowing = true;
+    } else {
+        shoppingCart.classList.remove("active");
+        isCartShowing = false;
+    }
+})
