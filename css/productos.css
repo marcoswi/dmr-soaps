@@ -49,6 +49,10 @@
     cursor: pointer;
 }
 
+.unavailable{
+    cursor: auto;
+}
+
 .productImg{
     width: 100%;
 }
@@ -65,7 +69,7 @@
 
 .product-benefits{
     text-align: center;
-    background-color: var(--pink);
+    background-color: var(--mainLight);
     font-size: 10px;
     height: 20px;
     line-height: 20px;

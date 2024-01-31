@@ -10,7 +10,7 @@
 }
 
 #main-section{
-    background-color: var(--pink);
+    background-color: var(--mainLight);
     display: flex;
     flex-direction: column;
     justify-content: center;

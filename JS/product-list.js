@@ -9,7 +9,8 @@ const products = [
         img: "assets/product-images/banda_exfoliante_para_espalda.jpeg",
         product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: false
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ const products = [
         img: "assets/product-images/jabonera_aro.jpeg",
         product_type: "jaboneras",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1]
+        price: [1],
+        availability: true
     },
     {
         id: 3,
@@ -27,7 +29,8 @@ const products = [
         img: "assets/product-images/jabonera_guayubira.jpeg",
         product_type: "jaboneras",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [2]
+        price: [2],
+        availability: true
     },
     {
         id: 4,
@@ -36,7 +39,8 @@ const products = [
         img: "assets/product-images/jabonera_nido.jpeg",
         product_type: "jaboneras",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1]
+        price: [1],
+        availability: true
     },
     {
         id: 5,
@@ -45,7 +49,8 @@ const products = [
         img: "assets/product-images/jabonera_para_shampoo_solido.jpeg",
         product_type: "jaboneras",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1]
+        price: [1],
+        availability: true
     },
     {
         id: 6,
@@ -54,7 +59,8 @@ const products = [
         img: "assets/product-images/jabon_con_indigo.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
     },
     {
         id: 7,
@@ -63,7 +69,8 @@ const products = [
         img: "assets/product-images/jabon_de_almendra.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
     },
     {
         id: 8,
@@ -72,7 +79,8 @@ const products = [
         img: "assets/product-images/jabon_de_arcilla_roja.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 9,
@@ -81,7 +89,8 @@ const products = [
         img: "assets/product-images/jabon_de_arcilla_rosa.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 10,
@@ -90,7 +99,8 @@ const products = [
         img: "assets/product-images/jabon_de_calendula.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 11,
@@ -99,7 +109,8 @@ const products = [
         img: "assets/product-images/jabon_de_carbon_vegetal.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 12,
@@ -108,7 +119,8 @@ const products = [
         img: "assets/product-images/jabon_de_chocolate.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 13,
@@ -117,7 +129,8 @@ const products = [
         img: "assets/product-images/jabon_de_coco.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 14,
@@ -126,7 +139,8 @@ const products = [
         img: "assets/product-images/jabon_de_enebro.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 15,
@@ -135,7 +149,8 @@ const products = [
         img: "assets/product-images/jabon_de_espirulina.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 16,
@@ -144,7 +159,8 @@ const products = [
         img: "assets/product-images/jabon_de_eucalipto_y_menta.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 17,
@@ -153,7 +169,8 @@ const products = [
         img: "assets/product-images/jabon_de_lavanda.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 18,
@@ -162,7 +179,8 @@ const products = [
         img: "assets/product-images/jabon_de_manzanilla.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 19,
@@ -171,7 +189,8 @@ const products = [
         img: "assets/product-images/jabon_de_miel.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 20,
@@ -180,7 +199,8 @@ const products = [
         img: "assets/product-images/jabon_de_ortiga.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 21,
@@ -189,7 +209,8 @@ const products = [
         img: "assets/product-images/jabon_de_nardo.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 22,
@@ -198,7 +219,8 @@ const products = [
         img: "assets/product-images/jabon_de_romero_y_aloe_vera.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 23,
@@ -207,7 +229,8 @@ const products = [
         img: "assets/product-images/jabon_de_rosa_mosqueta.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 24,
@@ -216,7 +239,8 @@ const products = [
         img: "assets/product-images/jabon_de_tea_tree.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 25,
@@ -225,7 +249,8 @@ const products = [
         img: "assets/product-images/jabon_de_zanahoria.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 26,
@@ -234,7 +259,8 @@ const products = [
         img: "assets/product-images/jabon_exfoliante_avenaMielLeche.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
         },
     {
         id: 27,
@@ -243,7 +269,8 @@ const products = [
         img: "assets/product-images/jabon_facial.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [3]
+        price: [3],
+        availability: true
         },
     {
         id: 28,
@@ -252,7 +279,8 @@ const products = [
         img: "assets/product-images/jabon_manos_trabajadoras.jpeg",
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
     },
     {
         id: 29,
@@ -261,7 +289,8 @@ const products = [
         img: 'assets/product-images/jabon_pies_arcilla_volcanica.jpeg',
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1,2]
+        price: [1,2],
+        availability: true
     }
 ]
 

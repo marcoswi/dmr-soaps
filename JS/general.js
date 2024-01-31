@@ -36,21 +36,6 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 
-//Make the menu appear as sticky without changing its position:absolute
-const navbarMenu = document.getElementById("navbar-menu");
-function handleMenuScroll() {
-    console.log("asdkakljs");
-    const scrollPosition = window.scrollY;
-    const threshold = 0;
-    if (scrollPosition > threshold) {
-        navbarMenu.style.top = `${scrollPosition}px`;
-    } else {
-        navbarMenu.style.top = "0";
-    }
-};
-window.addEventListener("scroll", handleMenuScroll);
-
-
 //To open and close Shopping Cart:
 const shoppingCartIcon = document.getElementById("shopping-cart-icon");
 const shoppingCart = document.getElementById("shoppingCart");
@@ -65,4 +50,15 @@ shoppingCartIcon.addEventListener("click", () =>{
         shoppingCart.classList.remove("active");
         isCartShowing = false;
     }
+})
+
+//To make the shopping cart be sticky
+
+
+
+//Whatsapp icon:
+const whatsappIcon = document.getElementById("whatsapp");
+
+whatsappIcon.addEventListener("click", function(){
+    window.open("https://wa.me/5491141849597");
 })

@@ -44,6 +44,7 @@ class DisplayProducts {
                     <button class="addToCartBtn">AGREGAR AL CARRITO</button>
             </div>
             `;
+           
         });
     };
 
