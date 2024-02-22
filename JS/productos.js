@@ -37,16 +37,27 @@ class DisplayProducts {
             productDisplay.innerHTML += `
             <div class="productCard" id="${product.id}">
                     <div class="productImgContainer">
-                        <img class="productImg" src="${product.img} " alt="Imagen ${product.name} ">
+                        <img class="productImg" id="productImg${product.id}" src="${product.img} " alt="Imagen ${product.name} ">
                     </div>
                     <div class="productTitle">${product.name} </div>
                     <div class="product-benefits">${product.product_benefits[0]} · ${product.product_benefits[1]} · ${product.product_benefits[2]}</div>
-                    <button class="addToCartBtn">AGREGAR AL CARRITO</button>
+                    <button class="addToCartBtn" id="addToCartBtn${product.id}">AGREGAR AL CARRITO</button>
             </div>
             `;
-           
+            const productImg = document.getElementById(`productImg${product.id}`)
+            const addToCartBtn = document.getElementById(`addToCartBtn${product.id}`);
+            if (product.availability === false){
+                productImg.classList.add("overlay");
+                addToCartBtn.innerText = "AGOTADO";
+            } else {
+                console.log("no products are set as false");
+                productImg.classList.remove("overlay");
+                addToCartBtn.innerText = "AGREGAR AL CARRITO";
+            }
         });
     };
+
+    
 
     //To filter products according to the selected category and display only the ones that apply:
     filterProducts(selectedProductCategories, productList){
@@ -183,6 +194,7 @@ class DisplayProducts {
     };
 
     closeExpandedView(id){
+    
         const expandedCard = document.getElementById(`expandedCard${id}`)
         if(expandedCard){
             expandedCard.remove();

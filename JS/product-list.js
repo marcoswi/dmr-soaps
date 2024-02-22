@@ -10,7 +10,7 @@ const products = [
         product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
         price: [1,2],
-        availability: false
+        availability: true
     },
     {
         id: 2,
@@ -120,7 +120,7 @@ const products = [
         product_type: "jabones",
         product_benefits: ["Activa", "Hidrata", "Repone"],
         price: [1,2],
-        availability: true
+        availability: false
         },
     {
         id: 13,

@@ -2,11 +2,18 @@
 
 #image-section{
     background-color: var(--white);
-    height: 400px;
+    height: 300px;
     background-image: url(../assets/various-page-assets/main-photo.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 50% 80%;
     background-repeat: no-repeat;
+
+    @media (min-width:770px){
+        height: 500px;
+        background-position: 90% 70%;
+    
+    }
+
 }
 
 #main-section{
@@ -17,24 +24,30 @@
     align-items: center;
     text-align: center;
     padding: 40px 0 ;
+    height: auto;
+
+    @media (min-width:770px){
+        height: auto;
+        
+    }
 }
 
 
 #main-section-title{
     width: 60%;
-    margin: 10px;
-
+    margin: 20px;
 }
 
 #main-section-p{
     width: 80%;
-    margin: 10px;
+    margin: 20px;
 
 }
 
 #main-section-btn-a{
     width: 40%;
     text-decoration: none;
+    margin: 20px;
 }
 
 .main-section-btn-class{
@@ -60,6 +73,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 15px;
+
+    @media (min-width:770px){
+        height: 300px;
+    }
+
+    @media (max-width:400px){
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0 ;
+    }
 }
 
 .benefit{
@@ -69,11 +95,24 @@
     align-items: center;
     justify-self: center;
     justify-content: center;
+
+    @media (max-width:400px){
+        width: 50%;
+        margin-top: 10px;
+    }
 }
 
 .benefit-icon{
-    width: 30%;
-    margin-bottom: 10px;
+    width: 40%;
+    margin-bottom: 20px;
+
+    @media (min-width:770px){
+        width: 20%;
+    }
+
+    @media (max-width:400px){
+        width: 40px;
+    }
 }
 
 .benefit-title{
@@ -88,10 +127,15 @@
     align-items: center;
     background-image: url(../assets/various-page-assets/regalos_jabones.jpeg);
     background-size: cover;
-    background-position: right;
     overflow: hidden;
     color: var(--white);
     position: relative;
+
+    @media (min-width:770px){
+        height: 500px;
+        background-position: 90% 60%;
+    
+    }
 }
 
 #gift-section::before {
