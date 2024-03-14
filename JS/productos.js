@@ -50,7 +50,6 @@ class DisplayProducts {
                 productImg.classList.add("overlay");
                 addToCartBtn.innerText = "AGOTADO";
             } else {
-                console.log("no products are set as false");
                 productImg.classList.remove("overlay");
                 addToCartBtn.innerText = "AGREGAR AL CARRITO";
             }
@@ -164,7 +163,7 @@ class DisplayProducts {
             const productImg = document.createElement("div");
             productImg.innerHTML = `
                     <div class="expandedView-ProductImgContainer">
-                        <img class="expandedView-ProductImg" src="${product.img} " alt="">
+                        <img class="expandedView-ProductImg" src="${product.img} " alt="product image">
                     </div>
             `;
     
@@ -194,7 +193,7 @@ class DisplayProducts {
     };
 
     closeExpandedView(id){
-    
+        count = 0;
         const expandedCard = document.getElementById(`expandedCard${id}`)
         if(expandedCard){
             expandedCard.remove();
@@ -203,7 +202,7 @@ class DisplayProducts {
         productDisplay.style.display = "grid";
     }
 
-    //To add or substract the quantity in the counter of the Expanded View.
+    //To add or substract the quantity in the counter of the Expanded View:
     addSubstractCount (){
         const addSubstractBtns = document.getElementsByClassName("counterAddSubstractBtn");
             [...addSubstractBtns].forEach(btn =>{

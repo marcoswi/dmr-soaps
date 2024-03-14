@@ -6,6 +6,7 @@
     <title>DMRSoaps</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/shoppingCart.css">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,17 +19,20 @@
                 <li class="menu-option"><a class="menu-option-a" href="index.html">INICIO</a></li>
                 <li class="menu-option"><a class="menu-option-a" href="">PRODUCTOS</a></li>
                 <li class="menu-option"><a class="menu-option-a" href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
-                <li class="menu-option"><a class="menu-option-a" href="contacto.html">CONTACTO</a></li>
-            </ul>
+<!--                 <li class="menu-option"><a class="menu-option-a" href="contacto.html">CONTACTO</a></li>
+ -->            </ul>
         </nav>
         <div id="logo-section">
             <a href="index.html"><img id="logo" src="assets/various-page-assets/dmr_logo.png" alt="dmr soaps logo"></a>
         </div>
         <div id="shoppingCart-section">
-            <img id="shopping-cart-icon" src="assets/various-page-assets/carrito-de-compras.png" alt="shopping cart icon">
+            <div id="shopping-cart-icon-container">
+                <div id="shopping-cart-icon-count">0</div>
+                <img id="shopping-cart-icon" src="assets/various-page-assets/carrito-de-compras.png" alt="shopping cart icon">
+            </div>
         </div>
     </header>
-    <!-- MAIN ------->
+    <!-- MAIN ------>
     <main>
         <div id="shoppingCart"></div>
         <div id="main-display-container">

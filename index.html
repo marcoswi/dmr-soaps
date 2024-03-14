@@ -6,6 +6,9 @@
     <title>DMRSoaps</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shoppingCart.css">
+
+
 
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
@@ -19,19 +22,21 @@
                 <li class="menu-option"><a class="menu-option-a" href="">INICIO</a></li>
                 <li class="menu-option"><a class="menu-option-a" href="productos.html">PRODUCTOS</a></li>
                 <li class="menu-option"><a class="menu-option-a" href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
-                <li class="menu-option"><a class="menu-option-a" href="contacto.html">CONTACTO</a></li>
+<!--                 <li class="menu-option"><a class="menu-option-a" href="contacto.html">CONTACTO</a></li> -->           
             </ul>
         </nav>
         <div id="logo-section">
             <a href="#"><img id="logo" src="assets/various-page-assets/dmr_logo.png" alt="dmr soaps logo"></a>
         </div>
         <div id="shoppingCart-section">
-            <img id="shopping-cart-icon" src="assets/various-page-assets/carrito-de-compras.png" alt="shopping cart icon">
+            <div id="shopping-cart-icon-container">
+                <div id="shopping-cart-icon-count">0</div>
+                <img id="shopping-cart-icon" src="assets/various-page-assets/carrito-de-compras.png" alt="shopping cart icon">
+            </div>
         </div>
     </header>
     <!------- MAIN -------->
     <main>
-        <div id="shoppingCart"></div>
         <div id="image-section"></div>
         <div id="main-section">
             <h2 id="main-section-title">Jabones naturales, pieles saludables.</h2>
@@ -53,7 +58,9 @@
             </div>
         </div>
         <div id="gift-section">
+            <div id="gift-section-opacity"></div>
             <div id="gift-section-text" class="gift-section-text-class">“El regalo perfecto, para cuidar tu piel.”</div>
+
         </div>
         <div id="whatsapp">
             <img  src="assets/various-page-assets/whatsapp.png" alt="whatsapp icon" srcset="">
@@ -91,5 +98,8 @@
     
     <script src="JS/general.js"></script>
     <script src="JS/index.js"></script>
+    <script type="module" src="JS/shoppingCart.js"></script>
 </body>
 </html>
+
+

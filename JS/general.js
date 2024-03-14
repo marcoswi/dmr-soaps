@@ -37,22 +37,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 //To open and close Shopping Cart:
-const shoppingCartIcon = document.getElementById("shopping-cart-icon");
-const shoppingCart = document.getElementById("shoppingCart");
-
-let isCartShowing = false;
-shoppingCartIcon.addEventListener("click", () =>{
-    console.log("clicked");
-    if (!isCartShowing){
-        shoppingCart.classList.add("active");
-        isCartShowing = true;
-    } else {
-        shoppingCart.classList.remove("active");
-        isCartShowing = false;
-    }
-})
-
-//To make the shopping cart be sticky
 
 
 
