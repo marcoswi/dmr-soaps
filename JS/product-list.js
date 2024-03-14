@@ -17,9 +17,9 @@ const products = [
         name: "Jabonera aro",
         description: "Guarda y conserva tus jabones con estilo usando nuestra jabonera aro. ¡Mantén tus jabones frescos y listos para su uso!",
         img: "assets/product-images/jabonera_aro.jpeg",
-        product_type: "jaboneras",
+        product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1],
+        price: [3],
         availability: true
     },
     {
@@ -27,9 +27,9 @@ const products = [
         name: "Jabonera guayubirá",
         description: "Organiza tus jabones con nuestra jabonera guayubirá. Dale a tu baño un toque natural y elegante.",
         img: "assets/product-images/jabonera_guayubira.jpeg",
-        product_type: "jaboneras",
+        product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [2],
+        price: [4],
         availability: true
     },
     {
@@ -37,9 +37,9 @@ const products = [
         name: "Jabonera nido",
         description: "Nuestra jabonera nido es perfecta para almacenar tus jabones de forma decorativa. Añade un toque único a tu espacio.",
         img: "assets/product-images/jabonera_nido.jpeg",
-        product_type: "jaboneras",
+        product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1],
+        price: [3],
         availability: true
     },
     {
@@ -47,9 +47,9 @@ const products = [
         name: "Jabonera para shampoo sólido",
         description: "Almacena y seca tu shampoo sólido fácilmente con nuestra jabonera especial. ¡Haz que tu shampoo sólido dure más!",
         img: "assets/product-images/jabonera_para_shampoo_solido.jpeg",
-        product_type: "jaboneras",
+        product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
-        price: [1],
+        price: [4],
         availability: true
     },
     {
@@ -324,12 +324,12 @@ const precios = {
     jaboneras : [
         {
             id:1,
-            formato: "Jabonera", 
+            formato: "Jabonera Hilo", 
             precio: 2500
         },
         {
             id:2,
-            formato: "Jabonera", 
+            formato: "Jabonera Madera", 
             precio: 2800
         }
     ],
@@ -343,6 +343,16 @@ const precios = {
             id:2,
             formato:"Sin barra de jabón",
             precio: 3500
+        },
+        {
+            id:3,
+            formato: "Jabonera Hilo", 
+            precio: 2500
+        },
+        {
+            id:4,
+            formato: "Jabonera Madera", 
+            precio: 2800
         }
     ]
 };
