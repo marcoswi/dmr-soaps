@@ -131,7 +131,8 @@ class ShoppingCart {
     showHideShoppingCart(event){
         if (event.target.id === "shopping-cart-icon" || event.target.id === "shopping-cart-icon-count" ){
             const mainElement = document.querySelector('main');
-            
+            const productsDisplay = document.getElementById("products-display-container");
+
             if (!this.isCartShowing){
                 const shoppingCartElement = document.createElement("div");
                 shoppingCartElement.id = "shoppingCart";
@@ -143,10 +144,13 @@ class ShoppingCart {
                     top: 0,
                     behavior: 'smooth' 
                 });
+                productsDisplay.style.display = "none";
             } else {
                 const shoppingCartElement = document.getElementById("shoppingCart");
                 shoppingCartElement.remove();
                 this.isCartShowing = false;
+                productsDisplay.style.display = "grid";
+
             } 
         }; 
     };
@@ -157,6 +161,7 @@ class ShoppingCart {
                     <div id="shoppingCartTitle">CESTA</div>
                     <div id="productsInShoppingCart"></div>
                     <div id="shoppingCartTotals"></div>
+                    <button id="sendConsulta">CONSULTA DISPONIBILIDAD</button>
         `;
         this.calculateTotalPriceInCart();
         this.displayProductsInShoppingCart();
