@@ -17,13 +17,13 @@
 }
 
 #main-section{
-    background-color: var(--mainLight);
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 0 ;
+    padding: 40px 0 0 ;
     height: auto;
 
     @media (min-width:770px){

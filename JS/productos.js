@@ -21,7 +21,8 @@ class DisplayProducts {
     //To show the product category filter container:
     filterContainer(){
         productCategories.reverse().forEach(category => {
-            const upperCaseCategory = category.charAt(0).toUpperCase() + category.slice(1);
+            /* const upperCaseCategory = category.charAt(0).toUpperCase() + category.slice(1); */
+            const upperCaseCategory = category.toUpperCase();
             filtersContainer.innerHTML += `
                 <div class="category-filter" id="${category}">${upperCaseCategory}</div>
             `;
@@ -34,12 +35,13 @@ class DisplayProducts {
     displayProducts(products){
         productDisplay.innerHTML = "";
         products.forEach(product =>{
+            let productName = product.name.toUpperCase();
             productDisplay.innerHTML += `
             <div class="productCard" id="${product.id}">
                     <div class="productImgContainer">
                         <img class="productImg" id="productImg${product.id}" src="${product.img} " alt="Imagen ${product.name} ">
                     </div>
-                    <div class="productTitle">${product.name} </div>
+                    <div class="productTitle">${productName} </div>
                     <div class="product-benefits">${product.product_benefits[0]} · ${product.product_benefits[1]} · ${product.product_benefits[2]}</div>
                     <button class="addToCartBtn" id="addToCartBtn${product.id}">AGREGAR AL CARRITO</button>
             </div>
@@ -98,7 +100,7 @@ class DisplayProducts {
 
         const pricesFormatsTitle = document.createElement("div");
         pricesFormatsTitle.classList.add("priceFormatTitle");
-        pricesFormatsTitle.innerText = "Formatos y precios:";
+        pricesFormatsTitle.innerText = "FORMATOS Y PRECIOS:";
 
         pricesDiv.appendChild(pricesFormatsTitle);
 
@@ -107,17 +109,19 @@ class DisplayProducts {
             const formatAndPrice = pricesArray.find(price => price.id == id)
             const formatAndPriceDiv = document.createElement("div");
             formatAndPriceDiv.classList.add("formatPriceOption");
-
+            let formatName = formatAndPrice.formato.toUpperCase();
+            
             if (isFirstIteration){
+                
                 formatAndPriceDiv.innerHTML = `
                 <input type="radio" id="format${id}" name="formatOptions" value="${id}" checked>
-                <label for="format${id}">${formatAndPrice.formato} - AR$${formatAndPrice.precio}</label>
+                <label for="format${id}">${formatName} - $ ${formatAndPrice.precio}</label>
                 `;
                 isFirstIteration = false;
             } else {
                 formatAndPriceDiv.innerHTML = `
                 <input type="radio" id="format" name="formatOptions" value="${id}">
-                <label for="format">${formatAndPrice.formato} - AR$${formatAndPrice.precio}</label>
+                <label for="format">${formatName} - $ ${formatAndPrice.precio}</label>
                 `;
             }
 
@@ -149,6 +153,7 @@ class DisplayProducts {
             productDisplay.style.display = "none";
     
             const product = productList.find(product => product.id == productCard.id);
+            let productName = product.name.toUpperCase();
             const pricesDiv = this.productFormatsAndPrices(product);
             
             const expandedProductView = document.createElement("div");
@@ -169,7 +174,7 @@ class DisplayProducts {
     
             const productDetails = document.createElement("div");
             productDetails.innerHTML = `
-                    <div class="expandedView-productName">${product.name} </div>
+                    <div class="expandedView-productName">${productName} </div>
                     <div class="expandedView-productBenefits"></div>
                     <div class="expandedView-productDescription">${product.description}</div>
             `;

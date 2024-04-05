@@ -27,7 +27,8 @@
     grid-gap: 15px;
     padding: 30px;
 
-    @media (min-width:770px){
+
+    @media (min-width:600px){
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 40px;
     }
@@ -46,7 +47,6 @@
     flex-direction: column;
     opacity: 0;
     transition: opacity 0.8s ease-in;
-   
 }
 
 .unavailable{
@@ -62,13 +62,14 @@
 .overlay{
     width: 100%;
     height: 100%;
-    background-color: #000; /* Dark color (adjust as needed) */
-    opacity: 0.4; /* Adjust the opacity to control the darkness */
+    background-color: #000; 
+    opacity: 0.4; 
 }
 
 .productTitle{
     padding: 10px 0;
-    height: 50px;
+    height: auto;
+    min-height: 50px;
     font-size: 12px;
     cursor: pointer;
 
@@ -83,7 +84,8 @@
     font-size: 10px;
     height: 20px;
     line-height: 20px;
-    margin: 3px 0 ;
+    margin-bottom: 3px;
+    padding: 0 2px;
     letter-spacing: 0.1em;
     cursor: pointer;
 }
@@ -94,12 +96,12 @@
     font-family: var(--typo-courier);
     font-size: 10px;
     width: 100%;
-    margin-top: auto;
     height: 40px;
     border: none;
     color: var(--white);
     letter-spacing: 0.1em;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 .productPrice{
@@ -201,13 +203,11 @@
     display: flex;
     align-items: center;
     margin: 10px;
-    font-size: 10px;
 
 }
 
 .formatPriceOption label{
-    padding-top: 2px;
+    padding: 2px 0 0 4px;
     margin-left: 5px;
-    text-align: center;
 }
 
