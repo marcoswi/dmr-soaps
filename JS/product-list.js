@@ -308,29 +308,29 @@ const precios = {
         {
             id:1,
             formato: "Barra (130 gr. en bolsita de lienzo)", 
-            precio: 3000
+            precio: 4000
         },
         {
             id:2,
             formato: "Barra (130 gr. sin packaging)",
-            precio: 2800
+            precio: 3500
         },  
         {
             id:3,
             formato: "Barra (60 gr. aprox.)",
-            precio: 2000
+            precio: 3000
         }
     ],
     jaboneras : [
         {
             id:1,
             formato: "Hilo", 
-            precio: 2500
+            precio: 3500
         },
         {
             id:2,
             formato: "Madera", 
-            precio: 2800
+            precio: 3800
         }
     ],
     accesorios : [
@@ -347,12 +347,12 @@ const precios = {
         {
             id:3,
             formato: "Hilo", 
-            precio: 2500
+            precio: 3500
         },
         {
             id:4,
             formato: "Madera", 
-            precio: 2800
+            precio: 3800
         }
     ]
 };

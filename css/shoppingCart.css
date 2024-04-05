@@ -46,6 +46,10 @@
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
+
+    @media (min-width:700px){
+        width: 70%;
+    }
 }
 
 .addToCartProduct-name{
