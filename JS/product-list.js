@@ -324,12 +324,12 @@ const precios = {
     jaboneras : [
         {
             id:1,
-            formato: "Jabonera Hilo", 
+            formato: "Hilo", 
             precio: 2500
         },
         {
             id:2,
-            formato: "Jabonera Madera", 
+            formato: "Madera", 
             precio: 2800
         }
     ],
@@ -346,12 +346,12 @@ const precios = {
         },
         {
             id:3,
-            formato: "Jabonera Hilo", 
+            formato: "Hilo", 
             precio: 2500
         },
         {
             id:4,
-            formato: "Jabonera Madera", 
+            formato: "Madera", 
             precio: 2800
         }
     ]

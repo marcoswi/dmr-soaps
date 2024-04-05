@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMRSoaps</title>
+    <title>DMRSOAPS</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/productos.css">
     <link rel="stylesheet" href="css/shoppingCart.css">
-
-
-
+    <link rel="stylesheet" href="css/consulta.css">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!------- HEADER -------->
+    <!-- HEADER ------->
     <header>
         <nav>
             <div id="hamburger-icon-menu">&#9776;</div>
             <ul id="navbar-menu">  
                 <li id="close-navbar-menu" class="menu-option">&times;</li>                  
-                <li class="menu-option"><a class="menu-option-a" href="">INICIO</a></li>
+                <li class="menu-option"><a class="menu-option-a" href="index.html">INICIO</a></li>
                 <li class="menu-option"><a class="menu-option-a" href="productos.html">PRODUCTOS</a></li>
                 <li class="menu-option"><a class="menu-option-a" href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
-<!--                 <li class="menu-option"><a class="menu-option-a" href="contacto.html">CONTACTO</a></li> -->           
-            </ul>
+<!--                 <li class="menu-option"><a class="menu-option-a" href="contacto.html">CONTACTO</a></li>
+ -->            </ul>
         </nav>
         <div id="logo-section">
-            <a href="#"><img id="logo" src="assets/various-page-assets/dmr_logo.png" alt="dmr soaps logo"></a>
+            <a href="index.html"><img id="logo" src="assets/various-page-assets/dmr_logo.png" alt="dmr soaps logo"></a>
         </div>
         <div id="shoppingCart-section">
             <div id="shopping-cart-icon-container">
@@ -35,39 +34,29 @@
             </div>
         </div>
     </header>
-    <!------- MAIN -------->
+    <!-- MAIN ------>
     <main>
         <div id="mainContainer">
-            <div id="image-section"></div>
-            <div id="main-section">
-                <h2 id="main-section-title">JABONES NATURALES, PIELES SALUDABLES.</h2>
-                <p id="main-section-p">CADA JABÓN CUENTA CON PROPIEDADES PARTICULARES QUE LE BRINDARÁN A TU PIEL LO QUE NECESITA.</p>
-                <a  id="main-section-btn-a" href="productos.html"><div id="main-section-btn" class="main-section-btn-class">ENCUENTRA EL TUYO</div></a>
-            </div>
-            <div id="benefits-section-main">
-                <div class="benefit">               
-                    <img class="benefit-icon" src="assets/various-page-assets/icon-natural-ingredients.png" alt="Icono Ingredientes Naturales" srcset="">
-                    <div class="benefit-title">INGREDIENTES 100% NATURALES</div>
-                </div>
-                <div class="benefit">                
-                    <img class="benefit-icon" src="assets/various-page-assets/icon-environment-friendly.png" alt="Icono amigable con el medio ambiente" srcset="">
-                    <div class="benefit-title">RESPETUOSOS CON EL MEDIO AMBIENTE</div>
-                </div>
-                <div class="benefit">
-                    <img class="benefit-icon" src="assets/various-page-assets/icon-soft-skin.png" alt="Icono suaviza la piel y no irrita" srcset="">
-                    <div class="benefit-title">SUAVIZAN LA PIEL Y NO IRRITAN</div>
-                </div>
-            </div>
-            <div id="gift-section">
-                <div id="gift-section-opacity"></div>
-                <div id="gift-section-text" class="gift-section-text-class">EL REGALO PERFECTO PARA CUIDAR TU PIEL.</div>
-            </div>
+            <form class="consulta-form" id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mleqoraq" method="post">
+                <fieldset class="form-inputsContainer" id="fs-frm-inputs">
+                    <label class="form-label" for="full-name"></label>
+                    <input class="form-input" type="text" name="name" id="full-name" placeholder="NOMBRE Y APELLIDO" required="">
+                    <label class="form-label" for="email-address"></label>
+                    <input class="form-input" type="email" name="_replyto" id="email-address" placeholder="EMAIL" required="">
+                    <label class="form-label" for="telefono"></label>
+                    <input class="form-input" type="telefono" name="telephone" id="telefono" placeholder="TELÉFONO">
+                    <label class="form-label" for="consultaTextbox">CONSULTA DISPONIBILIDAD Y HACENOS TUS PREGUNTAS:</label>
+                    <textarea class="form-input" rows="6" name="complaint" id="consultaTextbox" placeholder="" required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Form Submission">
+                    <div class="g-recaptcha" data-sitekey="6LdpF7EpAAAAAInQ4OsBdnv6K4dTXcoQFz-qZBms"></div>
+                <input class="form-submit" type="submit" value="ENVIAR CONSULTA">
+            </form>
             <div id="whatsapp">
                 <img  src="assets/various-page-assets/whatsapp.png" alt="whatsapp icon" srcset="">
             </div>
         </div>
     </main>
-    <!------- FOOTER ------->
+    <!-- FOOTER ------->
     <footer>
         <div id="newsletter-container">
             <h4>SUSCRIBETE A NUESTRO NEWSLETTER</h4>
@@ -98,9 +87,11 @@
     </footer>
     
     <script src="JS/general.js"></script>
-    <script src="JS/index.js"></script>
-    <script type="module" src="JS/shoppingCart.js"></script>
-</body>
+    <script  type="module" src="JS/productos.js"></script>
+    <script  type="module" src="JS/shoppingCart.js"></script>
+    <script type="module" src="JS/consulta.js"></script>
+    </body>
 </html>
+
 
 

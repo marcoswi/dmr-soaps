@@ -21,41 +21,48 @@ class DisplayProducts {
     //To show the product category filter container:
     filterContainer(){
         productCategories.reverse().forEach(category => {
-            /* const upperCaseCategory = category.charAt(0).toUpperCase() + category.slice(1); */
             const upperCaseCategory = category.toUpperCase();
-            filtersContainer.innerHTML += `
+            if (filtersContainer){
+                filtersContainer.innerHTML += `
                 <div class="category-filter" id="${category}">${upperCaseCategory}</div>
             `;
+            };
+            
         });
         const todosCategory = document.getElementById("todos");
-        todosCategory.classList.add("active");
+        if (todosCategory){
+            todosCategory.classList.add("active");
+        }
+        
     };
 
     //To display the products in the productDisplay container:
     displayProducts(products){
-        productDisplay.innerHTML = "";
-        products.forEach(product =>{
-            let productName = product.name.toUpperCase();
-            productDisplay.innerHTML += `
-            <div class="productCard" id="${product.id}">
-                    <div class="productImgContainer">
-                        <img class="productImg" id="productImg${product.id}" src="${product.img} " alt="Imagen ${product.name} ">
-                    </div>
-                    <div class="productTitle">${productName} </div>
-                    <div class="product-benefits">${product.product_benefits[0]} · ${product.product_benefits[1]} · ${product.product_benefits[2]}</div>
-                    <button class="addToCartBtn" id="addToCartBtn${product.id}">AGREGAR AL CARRITO</button>
-            </div>
-            `;
-            const productImg = document.getElementById(`productImg${product.id}`)
-            const addToCartBtn = document.getElementById(`addToCartBtn${product.id}`);
-            if (product.availability === false){
-                productImg.classList.add("overlay");
-                addToCartBtn.innerText = "AGOTADO";
-            } else {
-                productImg.classList.remove("overlay");
-                addToCartBtn.innerText = "AGREGAR AL CARRITO";
-            }
-        });
+        if(productDisplay){
+            productDisplay.innerHTML = "";
+            products.forEach(product =>{
+                let productName = product.name.toUpperCase();
+                productDisplay.innerHTML += `
+                <div class="productCard" id="${product.id}">
+                        <div class="productImgContainer">
+                            <img class="productImg" id="productImg${product.id}" src="${product.img} " alt="Imagen ${product.name} ">
+                        </div>
+                        <div class="productTitle">${productName} </div>
+                        <div class="product-benefits">${product.product_benefits[0]} · ${product.product_benefits[1]} · ${product.product_benefits[2]}</div>
+                        <button class="addToCartBtn" id="addToCartBtn${product.id}">AGREGAR AL CARRITO</button>
+                </div>
+                `;
+                const productImg = document.getElementById(`productImg${product.id}`)
+                const addToCartBtn = document.getElementById(`addToCartBtn${product.id}`);
+                if (product.availability === false){
+                    productImg.classList.add("overlay");
+                    addToCartBtn.innerText = "AGOTADO";
+                } else {
+                    productImg.classList.remove("overlay");
+                    addToCartBtn.innerText = "AGREGAR AL CARRITO";
+                }
+            });
+        }
     };
 
     
@@ -229,12 +236,15 @@ class DisplayProducts {
 };
 
 const displayProductsClass = new DisplayProducts();
+
 displayProductsClass.filterContainer();
 displayProductsClass.displayProducts(productList);
 displayProductsClass.assignActiveStatusToFilterOptions(categoryButtons);
 
 // To display expanded product view:
-productDisplay.addEventListener("click", displayProductsClass.generateExpandedProductCard);
+if(productDisplay){
+    productDisplay.addEventListener("click", displayProductsClass.generateExpandedProductCard);
+}
 
 
 

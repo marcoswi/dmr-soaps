@@ -35,14 +35,8 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 });
 
-
-//To open and close Shopping Cart:
-
-
-
 //Whatsapp icon:
 const whatsappIcon = document.getElementById("whatsapp");
-
 whatsappIcon.addEventListener("click", function(){
     window.open("https://wa.me/5491141849597");
 })
