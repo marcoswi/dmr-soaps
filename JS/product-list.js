@@ -308,51 +308,51 @@ const precios = {
         {
             id:1,
             formato: "Barra (130 gr. en bolsita de lienzo)", 
-            precio: 4000
+            precio: 6000
         },
         {
             id:2,
             formato: "Barra (130 gr. sin packaging)",
-            precio: 3500
+            precio: 5500
         },  
         {
             id:3,
             formato: "Barra (60 gr. aprox.)",
-            precio: 3000
+            precio: 5000
         }
     ],
     jaboneras : [
         {
             id:1,
             formato: "Hilo", 
-            precio: 3500
+            precio: 5500
         },
         {
             id:2,
             formato: "Madera", 
-            precio: 3800
+            precio: 5800
         }
     ],
     accesorios : [
         {
             id:1,
             formato:"Con barra de jabón",
-            precio: 5500
+            precio: 7500
         }, 
         {
             id:2,
             formato:"Sin barra de jabón",
-            precio: 3500
+            precio: 5500
         },
         {
             id:3,
             formato: "Hilo", 
-            precio: 3500
+            precio: 5500
         },
         {
             id:4,
             formato: "Madera", 
-            precio: 3800
+            precio: 5800
         }
     ]
 };

@@ -95,12 +95,18 @@ class ShoppingCart {
 
     calculateTotalPriceInCart(){
         const storedUserSelection = JSON.parse(localStorage.getItem('userSelection')) || [];
+
         let totalPrice = 0;
         storedUserSelection.forEach(product => {
             let productTotalPrice = product.selectedFormatPrice * product.selectedQuantity;
             totalPrice += productTotalPrice;
         })
         this.totalPriceInCart = totalPrice;
+
+        console.log(this.totalPriceInCart);
+
+        localStorage.setItem('totalPriceInCart', JSON.stringify(this.totalPriceInCart));
+
         const shoppingCartTotals = document.getElementById("shoppingCartTotals");
         shoppingCartTotals.innerHTML = `
             <div>TOTAL:</div><div>$${this.totalPriceInCart}</div>
@@ -211,6 +217,9 @@ class ShoppingCart {
             localStorage.setItem('userSelection', JSON.stringify(storedUserSelection));
             this.totalProductsInCart = this.totalProductsInCart - productQuantity;
             localStorage.setItem('totalProductsInCart', JSON.stringify(this.totalProductsInCart));
+
+
+
 
             this.displayProductsInShoppingCart();
             this.calculateTotalPriceInCart();

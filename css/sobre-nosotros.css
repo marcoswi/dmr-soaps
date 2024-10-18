@@ -15,7 +15,7 @@
 .sobreNosotrosImg{
     width: 100%;
     display: flex;
-    justify-content: center; /* Horizontally center */
+    justify-content: center; 
     align-items: flex-start;
 }
 
@@ -48,7 +48,7 @@
 
     .sobreNosotrosImg {
         width: 100%;
-        align-items: flex-start; /* Align items to the top */
+        align-items: flex-start;
     }
 
     .sobreNosotrosImg img {

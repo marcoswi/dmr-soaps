@@ -1,4 +1,4 @@
-
+/* 
 #main-display-container{
     position:relative;
 }
@@ -73,7 +73,6 @@
 
 .confirmationButton{
     background-color: var(--dark);
-    font-family: var(--typo-courier);
     font-size: 10px;
     width: 100%;
     margin-top: auto;
@@ -89,7 +88,6 @@
 }
 
 
-/* EXPANDED SHOPPING CART DISPLAY */
 
 #shoppingCart{
     opacity: 0;
@@ -181,7 +179,6 @@
 
 #sendConsulta {
     background-color: var(--dark);
-    font-family: var(--typo-courier);
     font-size: 15px;
     width: 100%;
     height: 50px;
@@ -224,3 +221,4 @@
         margin-top: auto;
     }
 }
+ */
