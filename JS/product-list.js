@@ -58,7 +58,7 @@ const products = [
         description: "Descubre la frescura y suavidad de nuestro jabón con indigo. Limpia tu piel mientras disfrutas de su aroma relajante.",
         img: "assets/product-images/jabon_con_indigo.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Relajante", "Regenador", "Revitalizante"],
         price: [1,2],
         availability: true
     },
@@ -68,7 +68,7 @@ const products = [
         description: "Nutre tu piel con nuestro jabón de almendra. Disfruta de una limpieza suave y deja que el aroma te envuelva.",
         img: "assets/product-images/jabon_de_almendra.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Nutritivo", "Suave", "Hidratante"],
         price: [1,2],
         availability: true
     },
@@ -78,7 +78,7 @@ const products = [
         description: "Experimenta la pureza de nuestro jabón de arcilla roja. Limpia y revitaliza tu piel con cada uso.",
         img: "assets/product-images/jabon_de_arcilla_roja.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Purificante", "Equilibrante", "Revitalizante"],
         price: [1,2],
         availability: true
         },
@@ -88,7 +88,7 @@ const products = [
         description: "Descubre la delicadeza de nuestro jabón de arcilla rosa. Mima tu piel y disfruta de un cuidado suave y natural.",
         img: "assets/product-images/jabon_de_arcilla_rosa.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Suave", "Calmante", "Renovador"],
         price: [1,2],
         availability: true
         },
@@ -108,7 +108,7 @@ const products = [
         description: "Purifica tu piel con nuestro jabón de carbón vegetal. Elimina impurezas y disfruta de una limpieza profunda.",
         img: "assets/product-images/jabon_de_carbon_vegetal.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Dsintoxicante", "Limpiador", "Purificador"],
         price: [1,2],
         availability: true
         },
@@ -128,7 +128,7 @@ const products = [
         description: "Revitaliza tu piel con nuestro jabón de coco. Experimenta la frescura tropical en cada baño.",
         img: "assets/product-images/jabon_de_coco.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Hidratante", "Nutritivo", "Emoliente"],
         price: [1,2],
         availability: true
         },
@@ -138,7 +138,7 @@ const products = [
         description: "Eleva tu rutina de cuidado con nuestro jabón de enebro. Limpia y refresca tu piel con su aroma estimulante.",
         img: "assets/product-images/jabon_de_enebro.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Refrescante", "Estimulante", "Tonificante"],
         price: [1,2],
         availability: true
         },
@@ -148,7 +148,7 @@ const products = [
         description: "Revitaliza tu piel con nuestro jabón de espirulina. Experimenta los beneficios de este superalimento en tu rutina diaria.",
         img: "assets/product-images/jabon_de_espirulina.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Nutritivo", "Revitalizante", "Depurativo"],
         price: [1,2],
         availability: true
         },
@@ -168,7 +168,7 @@ const products = [
         description: "Relaja tu mente y cuerpo con nuestro jabón de lavanda. Sumérgete en la calma y disfruta de una piel suave.",
         img: "assets/product-images/jabon_de_lavanda.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Relajante", "Purificante", "Equilibrante"],
         price: [1,2],
         availability: true
         },
@@ -178,7 +178,7 @@ const products = [
         description: "Calma tu piel con nuestro jabón de manzanilla. Disfruta de propiedades suavizantes y un aroma reconfortante.",
         img: "assets/product-images/jabon_de_manzanilla.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Calmante", "Antiinflamatorio", "Reparador"],
         price: [1,2],
         availability: true
         },
@@ -198,7 +198,7 @@ const products = [
         description: "Fortalece tu piel con nuestro jabón de ortiga. Experimenta una limpieza profunda y revitalizante.",
         img: "assets/product-images/jabon_de_ortiga.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Purificante", "Revitalizante", "Estimulante"],
         price: [1,2],
         availability: true
         },
@@ -208,7 +208,7 @@ const products = [
         description: "Envuélvete en la suavidad de nuestro jabón de nardo. Descubre el lujo de una piel bien cuidada.",
         img: "assets/product-images/jabon_de_nardo.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Aromático", "Refrescante", "Tonificante"],
         price: [1,2],
         availability: true
         },
@@ -218,7 +218,7 @@ const products = [
         description: "Revitaliza tu piel con nuestro jabón de romero y aloe vera. Disfruta de una limpieza refrescante y calmante.",
         img: "assets/product-images/jabon_de_romero_y_aloe_vera.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Estimulante", "Revitalizante", "Purificador"],
         price: [1,2],
         availability: true
         },
@@ -228,7 +228,7 @@ const products = [
         description: "Embellece tu piel con nuestro jabón de rosa mosqueta. Descubre la luminosidad natural de tu cutis.",
         img: "assets/product-images/jabon_de_rosa_mosqueta.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Regenerador", "Antioxidante", "Reparador"],
         price: [1,2],
         availability: true
         },
@@ -258,7 +258,7 @@ const products = [
         description: "Exfolia suavemente con nuestro jabón exfoliante de avena, miel y leche. Logra una piel radiante y nutrida con ingredientes naturales.",
         img: "assets/product-images/jabon_exfoliante_avenaMielLeche.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Nutritivo", "Reparador", "Emoliente"],
         price: [1,2],
         availability: true
         },
@@ -268,7 +268,7 @@ const products = [
         description: "Refresca tu rostro diariamente con nuestro jabón facial. Limpia y revitaliza tu piel para un cutis saludable.",
         img: "assets/product-images/jabon_facial.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Limpiador", "Equilibrante", "Emoliente"],
         price: [3],
         availability: true
         },
@@ -278,7 +278,7 @@ const products = [
         description: "Cuida tus manos con nuestro jabón especial para manos trabajadoras. Elimina la suciedad y deja tus manos suaves y protegidas.",
         img: "assets/product-images/jabon_manos_trabajadoras.jpeg",
         product_type: "jabones",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["Hidratante", "Reparador", "Emoliente"],
         price: [1,2],
         availability: true
     },
