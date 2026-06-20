@@ -31,6 +31,12 @@ function getFormatsForProduct(product) {
         .filter(Boolean);
 }
 
+function sortProductsByAvailability(products) {
+    return [...products].sort((firstProduct, secondProduct) =>
+        Number(secondProduct.availability) - Number(firstProduct.availability)
+    );
+}
+
 function renderFilters() {
     if (!filtersContainer) {
         return;
@@ -48,9 +54,10 @@ function renderProducts() {
         return;
     }
 
-    const productsToShow = activeCategory === "todos"
+    const filteredProducts = activeCategory === "todos"
         ? productList
         : productList.filter(product => product.product_type === activeCategory);
+    const productsToShow = sortProductsByAvailability(filteredProducts);
 
     productStatus.textContent = `${productsToShow.length} productos disponibles para consultar`;
 
