@@ -1,16 +1,16 @@
-//Fade in Encuentra el Tuyo Button:
-const encuentraElTuyoBtn = document.getElementById("main-section-btn");
-const giftSectionText = document.getElementById("gift-section-text");
+const revealElements = document.querySelectorAll("[data-reveal]");
 
-window.addEventListener("scroll", function () {
-    // Get the position of the element relative to the viewport
-    const btnPosition = encuentraElTuyoBtn.getBoundingClientRect().top;
-    const textPosition = giftSectionText.getBoundingClientRect().top;
-    // Check if the element is in the viewport
-    if (btnPosition < window.innerHeight -100) {
-        encuentraElTuyoBtn.classList.add("appear");
-    }
-    if (textPosition < this.window.innerHeight) {
-        giftSectionText.classList.add("appear");
-    }
-});
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("appear");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    revealElements.forEach(element => observer.observe(element));
+} else {
+    revealElements.forEach(element => element.classList.add("appear"));
+}

@@ -1,42 +1,55 @@
-//To OPEN and CLOSE menu:
+import { getWhatsappUrl } from "./cartUtils.js";
+
+const menu = document.getElementById("navbar-menu");
 const openMenuBtn = document.getElementById("hamburger-icon-menu");
 const closeMenuBtn = document.getElementById("close-navbar-menu");
-    
-const showHideMenu = function showHideMenu (){
-    const menu = document.getElementById("navbar-menu");
-    if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
-    } else {
-        menu.classList.add("active");
-    }
-};
+const whatsappButtons = document.querySelectorAll("[data-whatsapp-link]");
 
-openMenuBtn.addEventListener("click", showHideMenu);
-closeMenuBtn.addEventListener("click", showHideMenu);
+function toggleMenu() {
+    const isOpen = menu.classList.toggle("active");
+    openMenuBtn.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("menu-open", isOpen);
+}
 
+function closeMenu() {
+    menu.classList.remove("active");
+    openMenuBtn.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+}
 
-//To expand newsletter suscription imputs:
-const emailSuscription = document.getElementById("email-for-newsletter");
-const otherInputs = document.getElementById("expandable-inputs");
+function markActiveNavigation() {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-emailSuscription.addEventListener("click", function(){
-    otherInputs.classList.add("visible");
-});
+    document.querySelectorAll(".menu-option-a").forEach(option => {
+        const optionPage = option.getAttribute("href") || "index.html";
+        const isActive = optionPage === currentPage || (currentPage === "" && optionPage === "index.html");
 
-//To mark the selected option in the menu as active:
-document.addEventListener("DOMContentLoaded", function(){
-    const currentHref = window.location.href;
-    const menuOptions = document.querySelectorAll(".menu-option-a");
-
-    menuOptions.forEach(option =>{
-        if (option.href === currentHref ){
-            option.classList.add("menu-option-a-active");
+        option.classList.toggle("menu-option-a-active", isActive);
+        if (isActive) {
+            option.setAttribute("aria-current", "page");
         }
     });
+}
+
+function refreshWhatsappLinks() {
+    whatsappButtons.forEach(link => {
+        link.setAttribute("href", getWhatsappUrl());
+    });
+}
+
+if (openMenuBtn && closeMenuBtn && menu) {
+    openMenuBtn.addEventListener("click", toggleMenu);
+    closeMenuBtn.addEventListener("click", closeMenu);
+    menu.addEventListener("click", event => {
+        if (event.target.matches("a")) {
+            closeMenu();
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    markActiveNavigation();
+    refreshWhatsappLinks();
 });
 
-//Whatsapp icon:
-const whatsappIcon = document.getElementById("whatsapp");
-whatsappIcon.addEventListener("click", function(){
-    window.open("https://wa.me/5491141849597");
-})
+window.addEventListener("cart:updated", refreshWhatsappLinks);

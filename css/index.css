@@ -1,15 +1,1 @@
-/* /* ---- Index Main ---------------------------- */
-
-#image-section{
-    background-color: var(--white);
-    height: 300px;
-    background-image: url(../assets/various-page-assets/main-photo.jpg);
-    background-size: cover;
-    background-position: 50% 80%;
-    background-repeat: no-repeat;
-
-    @media (min-width:770px){
-        height: 500px;
-        background-position: 90% 70%;
-    }
-}
+/* Styles are consolidated in styles.css for the static site refresh. */
