@@ -325,34 +325,34 @@ const precios = {
         {
             id:1,
             formato: "Hilo", 
-            precio: 5500
+            precio: 9000
         },
         {
             id:2,
             formato: "Madera", 
-            precio: 5800
+            precio: 12000
         }
     ],
     accesorios : [
         {
             id:1,
             formato:"Con barra de jabón",
-            precio: 7500
+            precio: 12000
         }, 
         {
             id:2,
             formato:"Sin barra de jabón",
-            precio: 5500
+            precio: 11000
         },
         {
             id:3,
             formato: "Hilo", 
-            precio: 5500
+            precio: 9000
         },
         {
             id:4,
             formato: "Madera", 
-            precio: 5800
+            precio: 9000
         }
     ]
 };
