@@ -10,7 +10,7 @@ const products = [
         product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
         price: [1,2],
-        availability: true
+        availability: false
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const products = [
         product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
         price: [3],
-        availability: true
+        availability: false
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const products = [
         product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
         price: [4],
-        availability: true
+        availability: false
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const products = [
         product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
         price: [3],
-        availability: true
+        availability: false
     },
     {
         id: 5,
@@ -50,7 +50,7 @@ const products = [
         product_type: "accesorios",
         product_benefits: ["Activa", "Hidrata", "Repone"],
         price: [4],
-        availability: true
+        availability: false
     },
     {
         id: 6,
