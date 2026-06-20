@@ -308,12 +308,12 @@ const precios = {
         {
             id:1,
             formato: "Barra (130 gr. en bolsita de lienzo)", 
-            precio: 6000
+            precio: 11000
         },
         {
             id:2,
             formato: "Barra (130 gr. sin packaging)",
-            precio: 5500
+            precio: 9500
         },  
         {
             id:3,
