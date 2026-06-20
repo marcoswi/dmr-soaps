@@ -8,7 +8,7 @@ const products = [
         description: "Exfolia tu espalda fácilmente con nuestra banda exfoliante. Disfruta de una piel suave y renovada.",
         img: "assets/product-images/banda_exfoliante_para_espalda.jpeg",
         product_type: "accesorios",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["", "", ""],
         price: [1,2],
         availability: false
     },
@@ -18,7 +18,7 @@ const products = [
         description: "Guarda y conserva tus jabones con estilo usando nuestra jabonera aro. ¡Mantén tus jabones frescos y listos para su uso!",
         img: "assets/product-images/jabonera_aro.jpeg",
         product_type: "accesorios",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["", "", ""],
         price: [3],
         availability: false
     },
@@ -28,7 +28,7 @@ const products = [
         description: "Organiza tus jabones con nuestra jabonera guayubirá. Dale a tu baño un toque natural y elegante.",
         img: "assets/product-images/jabonera_guayubira.jpeg",
         product_type: "accesorios",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["", "", ""],
         price: [4],
         availability: false
     },
@@ -38,7 +38,7 @@ const products = [
         description: "Nuestra jabonera nido es perfecta para almacenar tus jabones de forma decorativa. Añade un toque único a tu espacio.",
         img: "assets/product-images/jabonera_nido.jpeg",
         product_type: "accesorios",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["", "", ""],
         price: [3],
         availability: false
     },
@@ -48,7 +48,7 @@ const products = [
         description: "Almacena y seca tu shampoo sólido fácilmente con nuestra jabonera especial. ¡Haz que tu shampoo sólido dure más!",
         img: "assets/product-images/jabonera_para_shampoo_solido.jpeg",
         product_type: "accesorios",
-        product_benefits: ["Activa", "Hidrata", "Repone"],
+        product_benefits: ["", "", ""],
         price: [4],
         availability: false
     },
