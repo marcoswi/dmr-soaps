@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "seo:sitemap": "node scripts/generate-sitemap.mjs",
+    "cloudflare:secret": "npx wrangler secret put PRERENDER_TOKEN",
+    "cloudflare:deploy": "npx wrangler deploy",
+    "cloudflare:tail": "npx wrangler tail dmr-soaps-prerender"
+  }
+}

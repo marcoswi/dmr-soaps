@@ -1,5 +1,6 @@
 import productListAndCategories from "./product-list.js";
 import { addCartItem, formatCurrency } from "./cartUtils.js";
+import { setCatalogSeo, setProductSeo } from "./seo.js";
 
 const productList = productListAndCategories.products;
 const productPrices = productListAndCategories.precios;
@@ -95,6 +96,7 @@ function closeProductDetail({ updateHistory = true } = {}) {
     productDisplay.hidden = false;
     filtersContainer.hidden = false;
     productStatus.hidden = false;
+    setCatalogSeo();
 
     if (updateHistory) {
         history.pushState({}, "", getCatalogUrl());
@@ -103,6 +105,7 @@ function closeProductDetail({ updateHistory = true } = {}) {
 
 function renderProductDetail(product, { updateHistory = true } = {}) {
     const formats = getFormatsForProduct(product);
+    setProductSeo(product, formats);
 
     productDisplay.hidden = true;
     filtersContainer.hidden = true;
@@ -253,6 +256,7 @@ window.addEventListener("popstate", () => {
 
 renderFilters();
 renderProducts();
+setCatalogSeo();
 
 const initialProductId = Number(new URLSearchParams(window.location.search).get("producto"));
 const initialProduct = productList.find(item => item.id === initialProductId);

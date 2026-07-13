@@ -194,7 +194,7 @@ main {
 }
 
 .hero-media {
-    background-image: linear-gradient(rgba(59, 42, 34, 0.12), rgba(59, 42, 34, 0.12)), url("../assets/various-page-assets/main-photo.jpg");
+    background-image: linear-gradient(rgba(59, 42, 34, 0.12), rgba(59, 42, 34, 0.12)), url("../assets/various-page-assets/main-photo-optimized.jpg");
     background-position: center 62%;
     background-size: cover;
     min-height: 42vh;

@@ -1,0 +1,9 @@
+name = "dmr-soaps-prerender"
+main = "cloudflare/prerender-worker.js"
+compatibility_date = "2026-07-13"
+
+routes = [
+  { pattern = "dmrsoaps.com/*", zone_name = "dmrsoaps.com" },
+  { pattern = "www.dmrsoaps.com/*", zone_name = "dmrsoaps.com" }
+]
+
